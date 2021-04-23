@@ -21,7 +21,7 @@ public class oneSingleJson {
 		JSONArray jsonArray = new JSONArray();
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Business", "root", "Ayshu@123");
+		Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Business", "root", "Password@123");
 		
 		//object of statement class help us to execute queries
 		Statement createStatement = conn.createStatement();	
