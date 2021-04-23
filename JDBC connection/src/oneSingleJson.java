@@ -31,12 +31,6 @@ public class oneSingleJson {
 		while (executeQuery.next())
 		{
 			customerDetails.setDetails(executeQuery.getString(1), executeQuery.getString(2), executeQuery.getInt(3), executeQuery.getString(4));
-			System.out.println(customerDetails.getCourseName());
-			System.out.println(customerDetails.getPurchaseDate());
-			System.out.println(customerDetails.getAmount());
-			System.out.println(customerDetails.getLocation());
-			System.out.println();
-			
 			
 			//converting data objects to json	
 			objectMapper.writeValue(new File("E:\\Software Testing\\SDET\\Coding\\Eclipse Projects\\JDBC connection\\JSON\\customerDetails" + i + ".json"), customerDetails);
